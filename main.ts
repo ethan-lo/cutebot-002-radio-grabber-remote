@@ -23,6 +23,9 @@ joystickbit.onButtonEvent(joystickbit.JoystickBitPin.P15, joystickbit.ButtonType
         . # # # .
         `)
 })
+input.onButtonPressed(Button.AB, function () {
+    radio.sendNumber(7)
+})
 input.onButtonPressed(Button.B, function () {
     radio.sendNumber(6)
 })
